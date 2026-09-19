@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой учебный проект на Shoelace</title>
+    
+    <!-- Подключение стилей Shoelace -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.0/cdn/themes/light.css" />
+    <!-- Подключение скриптов Shoelace (обязательно!) -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.0/cdn/shoelace-autoloader.js"></script>
+    
+    <!-- Ваши кастомные стили -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="logo">Мой Medieval Сайт</div>
+        <nav class="nav">
+            <!-- Здесь будет бургер-меню для мобильных -->
+            <sl-button>Главная</sl-button>
+            <sl-button>О проекте</sl-button>
+            <sl-button>Контакты</sl-button>
+        </nav>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="main-content">
+        <h1>Добро пожаловать!</h1>
+        <p>Это главная страница моего проекта.</p>
+        
+        <!-- Пример использования компонента Shoelace -->
+        <sl-card class="card-overview">
+            <img slot="image" src="img/example.jpg" alt="Пример изображения" />
+            <strong>Заголовок карточки</strong><br />
+            <small>Описание карточки</small>
+        </sl-card>
+    </main>
+
+    <!-- Сайдбар -->
+    <aside class="sidebar">
+        <h3>Навигация</h3>
+        <ul>
+            <li><a href="#">Ссылка 1</a></li>
+            <li><a href="#">Ссылка 2</a></li>
+        </ul>
+    </aside>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <p>&copy; 2026 Мой учебный проект. Все права защищены.</p>
+    </footer>
+
+    <!-- Ваш JS -->
+    <script src="js/script.js"></script>
+</body>
+</body>
+</html>
