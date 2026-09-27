@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Внутренняя оптимизация сайта: мета-теги, заголовки H1-H6, ключевые слова, работа с контентом.">
+    <title>Внутренняя оптимизация сайта | SEO-Гид</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.0/cdn/themes/light.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.0/cdn/shoelace-autoloader.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="header__logo">
+            <sl-icon name="graph-up-arrow"></sl-icon>
+            <span>SEO-Гид</span>
+        </a>
+        <button class="header__burger" id="burgerBtn" aria-label="Открыть меню">
+            <sl-icon name="list"></sl-icon>
+        </button>
+        <nav class="header__nav nav" aria-label="Основная навигация">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+                <li class="nav__item"><a href="basics.html" class="nav__link">Основы</a></li>
+                <li class="nav__item"><a href="on-page.html" class="nav__link nav__link--active">Внутренняя</a></li>
+                <li class="nav__item"><a href="off-page.html" class="nav__link">Внешняя</a></li>
+                <li class="nav__item"><a href="technical.html" class="nav__link">Техническое</a></li>
+                <li class="nav__item"><a href="tools.html" class="nav__link">Инструменты</a></li>
+                <li class="nav__item"><a href="checklist.html" class="nav__link">Чек-лист</a></li>
+                <li class="nav__item"><a href="blog.html" class="nav__link">Блог</a></li>
+                <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="layout">
+        <main class="main">
+            <h1>Внутренняя оптимизация сайта (On-Page SEO)</h1>
+            <p><strong>Внутренняя оптимизация</strong> — это работа над содержимым и структурой страниц, которая помогает поисковым системам понять, о чём ваш сайт, и показать его по нужным запросам.</p>
+
+            <h2>Мета-теги</h2>
+            <p>Мета-теги — это HTML-элементы в секции <code>&lt;head&gt;</code>, которые передают информацию о странице поисковикам и браузерам.</p>
+
+            <h3>Title — заголовок страницы</h3>
+            <p>Самый важный мета-тег. Отображается во вкладке браузера и в результатах поиска как синяя ссылка. Оптимальная длина — <strong>50–60 символов</strong>.</p>
+            <p>Формула хорошего Title: <em>«Ключевой запрос — уточнение | Название бренда»</em>.</p>
+
+            <h3>Description — описание</h3>
+            <p>Краткое описание страницы, которое показывается под ссылкой в поиске. Не влияет на позиции напрямую, но повышает кликабельность (CTR). Оптимальная длина — <strong>150–160 символов</strong>.</p>
+
+            <h3>Keywords</h3>
+            <p>Устаревший тег, который сейчас практически не учитывается. Лучше не использовать.</p>
+
+            <h2>Заголовки H1–H6</h2>
+            <p>Заголовки структурируют контент и помогают и поисковикам, и пользователям.</p>
+            <ul>
+                <li><strong>H1</strong> — главный заголовок страницы. Должен быть только один на странице и содержать ключевой запрос.</li>
+                <li><strong>H2</strong> — подзаголовки разделов.</li>
+                <li><strong>H3–H6</strong> — подзаголовки внутри разделов.</li>
+            </ul>
+            <p>Иерархия должна быть логичной: нельзя после H1 сразу ставить H3, минуя H2.</p>
+
+            <h2>Ключевые слова</h2>
+            <p>Ключевые слова — это фразы, по которым пользователи ищут информацию. Их делят на:</p>
+            <ul>
+                <li><strong>Высокочастотные (ВЧ)</strong> — много запросов, высокая конкуренция;</li>
+                <li><strong>Среднечастотные (СЧ)</strong> — баланс частоты и конкуренции;</li>
+                <li><strong>Низкочастотные (НЧ)</strong> — мало запросов, но легче выйти в топ;</li>
+                <li><strong>Длинный хвост (long tail)</strong> — очень конкретные запросы из 4+ слов.</li>
+            </ul>
+            <p>Ключи нужно использовать естественно: в Title, H1, первом абзаце, по тексту. Не переспамливайте!</p>
+
+            <h2>Контент</h2>
+            <p>Контент — король SEO. Хорошая статья должна:</p>
+            <ol>
+                <li>Полностью отвечать на запрос пользователя;</li>
+                <li>Быть уникальной и полезной;</li>
+                <li>Иметь чёткую структуру (заголовки, списки, абзацы);</li>
+                <li>Содержать изображения, таблицы, видео;</li>
+                <li>Регулярно обновляться.</li>
+            </ol>
+
+            <h2>Внутренняя перелинковка</h2>
+            <p>Ссылки между страницами вашего сайта помогают:</p>
+            <ul>
+                <li>Распределять «вес» между страницами;</li>
+                <li>Улучшать навигацию для пользователей;</li>
+                <li>Ускорять индексацию новых материалов.</li>
+            </ul>
+
+            <p>Следующий раздел — <a href="off-page.html">внешняя оптимизация</a>.</p>
+        </main>
+
+        <aside class="sidebar">
+
+            <div class="sidebar__block">
+                <h3 class="sidebar__title"><sl-icon name="bookmarks"></sl-icon> Содержание</h3>
+                <ul class="sidebar__list">
+                    <li><a href="#мета-теги">→ Мета-теги</a></li>
+                    <li><a href="#заголовки-h1h6">→ Заголовки H1–H6</a></li>
+                    <li><a href="#ключевые-слова">→ Ключевые слова</a></li>
+                    <li><a href="#контент">→ Контент</a></li>
+                    <li><a href="#внутренняя-перелинковка">→ Перелинковка</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar__cta">
+                <h3>Чек-лист</h3>
+                <p>Пошаговый план внутренней оптимизации страницы.</p>
+                <sl-button href="checklist.html" variant="default" style="width:100%;">Открыть →</sl-button>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__col">
+                <h3 class="footer__title">SEO-Гид</h3>
+                <p class="footer__text">Учебный проект по поисковой оптимизации.</p>
+            </div>
+            <div class="footer__col">
+                <h3 class="footer__title">Навигация</h3>
+                <ul class="footer__list">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="basics.html">Основы SEO</a></li>
+                    <li><a href="technical.html">Техническое SEO</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h3 class="footer__title">Контакты</h3>
+                <ul class="footer__list">
+                    <li><a href="mailto:info@seo-guide.ru">info@seo-guide.ru</a></li>
+                    <li><a href="tel:+78001234567">+7 (800) 123-45-67</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2026 SEO-Гид. Все права защищены. Учебный проект.</p>
+        </div>
+    </footer>
+
+    <sl-drawer label="Меню" id="drawer" placement="end">
+        <nav class="nav nav--mobile" aria-label="Мобильная навигация">
+            <ul class="nav__list" style="flex-direction:column; gap:0.25rem;">
+                <li><a href="index.html" class="nav__link">Главная</a></li>
+                <li><a href="basics.html" class="nav__link">Основы</a></li>
+                <li><a href="on-page.html" class="nav__link nav__link--active">Внутренняя</a></li>
+                <li><a href="off-page.html" class="nav__link">Внешняя</a></li>
+                <li><a href="technical.html" class="nav__link">Техническое</a></li>
+                <li><a href="tools.html" class="nav__link">Инструменты</a></li>
+                <li><a href="checklist.html" class="nav__link">Чек-лист</a></li>
+                <li><a href="blog.html" class="nav__link">Блог</a></li>
+                <li><a href="contacts.html" class="nav__link">Контакты</a></li>
+            </ul>
+        </nav>
+    </sl-drawer>
+
+    <script src="script.js"></script>
+</body>
+</html>

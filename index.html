@@ -3,58 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой учебный проект на Shoelace</title>
-    
-    <!-- Подключение стилей Shoelace -->
+    <meta name="description" content="SEO-Гид — учебный проект по поисковой оптимизации. Узнайте, что такое SEO, зачем оно нужно и как продвигать сайт в поисковых системах.">
+    <title>SEO-Гид — Всё о поисковой оптимизации</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.0/cdn/themes/light.css" />
-    <!-- Подключение скриптов Shoelace (обязательно!) -->
     <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.0/cdn/shoelace-autoloader.js"></script>
-    
-    <!-- Ваши кастомные стили -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <body>
-    <!-- Шапка сайта -->
     <header class="header">
-        <div class="logo">Мой Medieval Сайт</div>
-        <nav class="nav">
-            <!-- Здесь будет бургер-меню для мобильных -->
-            <sl-button>Главная</sl-button>
-            <sl-button>О проекте</sl-button>
-            <sl-button>Контакты</sl-button>
+        <a href="index.html" class="header__logo">
+            <sl-icon name="graph-up-arrow"></sl-icon>
+            <span>SEO-Гид</span>
+        </a>
+        <button class="header__burger" id="burgerBtn" aria-label="Открыть меню">
+            <sl-icon name="list"></sl-icon>
+        </button>
+        <nav class="header__nav nav" aria-label="Основная навигация">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link nav__link--active">Главная</a></li>
+                <li class="nav__item"><a href="basics.html" class="nav__link">Основы</a></li>
+                <li class="nav__item"><a href="on-page.html" class="nav__link">Внутренняя</a></li>
+                <li class="nav__item"><a href="off-page.html" class="nav__link">Внешняя</a></li>
+                <li class="nav__item"><a href="technical.html" class="nav__link">Техническое</a></li>
+                <li class="nav__item"><a href="tools.html" class="nav__link">Инструменты</a></li>
+                <li class="nav__item"><a href="checklist.html" class="nav__link">Чек-лист</a></li>
+                <li class="nav__item"><a href="blog.html" class="nav__link">Блог</a></li>
+                <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+            </ul>
         </nav>
     </header>
 
-    <!-- Основной контент -->
-    <main class="main-content">
-        <h1>Добро пожаловать!</h1>
-        <p>Это главная страница моего проекта.</p>
-        
-        <!-- Пример использования компонента Shoelace -->
-        <sl-card class="card-overview">
-            <img slot="image" src="img/example.jpg" alt="Пример изображения" />
-            <strong>Заголовок карточки</strong><br />
-            <small>Описание карточки</small>
-        </sl-card>
-    </main>
+    <div class="layout">
+        <main class="main">
+            <h1>Что такое SEO и почему это важно</h1>
+            <p><strong>SEO (Search Engine Optimization)</strong> — это комплекс мер по оптимизации сайта для поисковых систем. Цель SEO — вывести страницы сайта на первые позиции в результатах поиска по запросам целевой аудитории.</p>
 
-    <!-- Сайдбар -->
-    <aside class="sidebar">
-        <h3>Навигация</h3>
-        <ul>
-            <li><a href="#">Ссылка 1</a></li>
-            <li><a href="#">Ссылка 2</a></li>
-        </ul>
-    </aside>
+            <img
+                src="img/seo-main.jpg"
+                alt="Схема поисковой оптимизации сайта"
+                title="Поисковая оптимизация — путь к вершине поисковой выдачи"
+                class="img-responsive"
+                width="800" height="400"
+            >
 
-    <!-- Подвал -->
+            <h2>Почему SEO важно для бизнеса</h2>
+            <p>Органический трафик из поисковых систем — один из самых ценных источников посетителей. В отличие от платной рекламы, SEO-трафик:</p>
+            <ul>
+                <li>Не требует оплаты за каждый клик;</li>
+                <li>Приводит заинтересованных пользователей, которые сами ищут ваш товар или услугу;</li>
+                <li>Работает 24/7 без дополнительных вложений после вывода сайта в топ;</li>
+                <li>Формирует доверие: пользователи больше верят естественной выдаче, чем рекламе.</li>
+            </ul>
+
+            <h2>Три кита SEO</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3><sl-icon name="file-earmark-text"></sl-icon> Внутренняя оптимизация</h3>
+                    <p>Работа над контентом, мета-тегами, структурой страниц и заголовками.</p>
+                    <a href="on-page.html">Подробнее →</a>
+                </div>
+                <div class="card">
+                    <h3><sl-icon name="link-45deg"></sl-icon> Внешняя оптимизация</h3>
+                    <p>Ссылочное продвижение, работа с авторитетом домена и упоминаниями.</p>
+                    <a href="off-page.html">Подробнее →</a>
+                </div>
+                <div class="card">
+                    <h3><sl-icon name="gear"></sl-icon> Техническое SEO</h3>
+                    <p>Скорость загрузки, мобильная адаптация, robots.txt, карта сайта.</p>
+                    <a href="technical.html">Подробнее →</a>
+                </div>
+            </div>
+
+            <h2>С чего начать изучение</h2>
+            <p>Рекомендуем двигаться по нашему сайту последовательно — от раздела «<a href="basics.html">Основы SEO</a>» к «<a href="checklist.html">Чек-листу</a>». Так вы получите полное представление о процессе продвижения сайта.</p>
+
+            <h2>Обзор разделов</h2>
+            <ol>
+                <li><a href="basics.html">Основы SEO</a> — как работают поисковые системы;</li>
+                <li><a href="on-page.html">Внутренняя оптимизация</a> — работа с контентом сайта;</li>
+                <li><a href="off-page.html">Внешняя оптимизация</a> — ссылки и репутация;</li>
+                <li><a href="technical.html">Техническое SEO</a> — скорость и доступность;</li>
+                <li><a href="tools.html">Инструменты</a> — сервисы для анализа;</li>
+                <li><a href="checklist.html">Чек-лист</a> — пошаговый план действий.</li>
+            </ol>
+        </main>
+
+        <aside class="sidebar">
+            
+
+            <div class="sidebar__block">
+                <h3 class="sidebar__title"><sl-icon name="bookmarks"></sl-icon> Разделы</h3>
+                <ul class="sidebar__list">
+                    <li><a href="basics.html">→ Основы SEO</a></li>
+                    <li><a href="on-page.html">→ Внутренняя оптимизация</a></li>
+                    <li><a href="off-page.html">→ Внешняя оптимизация</a></li>
+                    <li><a href="technical.html">→ Техническое SEO</a></li>
+                    <li><a href="tools.html">→ Инструменты SEO</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar__cta">
+                <h3>Начните с основ</h3>
+                <p>Разберитесь, как поисковики находят и ранжируют сайты.</p>
+                <sl-button href="basics.html" variant="default" style="width:100%;">Перейти →</sl-button>
+            </div>
+        </aside>
+    </div>
+
     <footer class="footer">
-        <p>&copy; 2026 Мой учебный проект. Все права защищены.</p>
+        <div class="footer__inner">
+            <div class="footer__col">
+                <h3 class="footer__title">SEO-Гид</h3>
+                <p class="footer__text">Учебный проект по поисковой оптимизации.</p>
+            </div>
+            <div class="footer__col">
+                <h3 class="footer__title">Навигация</h3>
+                <ul class="footer__list">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="basics.html">Основы SEO</a></li>
+                    <li><a href="technical.html">Техническое SEO</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h3 class="footer__title">Контакты</h3>
+                <ul class="footer__list">
+                    <li><a href="mailto:info@seo-guide.ru">info@seo-guide.ru</a></li>
+                    <li><a href="tel:+78001234567">+7 (800) 123-45-67</a></li>
+                    <li>Москва, ул. Примерная, 1</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2026 SEO-Гид. Все права защищены. Учебный проект.</p>
+        </div>
     </footer>
 
-    <!-- Ваш JS -->
-    <script src="js/script.js"></script>
-</body>
+    <sl-drawer label="Меню" id="drawer" placement="end">
+        <nav class="nav nav--mobile" aria-label="Мобильная навигация">
+            <ul class="nav__list" style="flex-direction:column; gap:0.25rem;">
+                <li><a href="index.html" class="nav__link nav__link--active">Главная</a></li>
+                <li><a href="basics.html" class="nav__link">Основы</a></li>
+                <li><a href="on-page.html" class="nav__link">Внутренняя</a></li>
+                <li><a href="off-page.html" class="nav__link">Внешняя</a></li>
+                <li><a href="technical.html" class="nav__link">Техническое</a></li>
+                <li><a href="tools.html" class="nav__link">Инструменты</a></li>
+                <li><a href="checklist.html" class="nav__link">Чек-лист</a></li>
+                <li><a href="blog.html" class="nav__link">Блог</a></li>
+                <li><a href="contacts.html" class="nav__link">Контакты</a></li>
+            </ul>
+        </nav>
+    </sl-drawer>
+
+    <script src="script.js"></script>
 </body>
 </html>

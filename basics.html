@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Как работают поисковые системы: краулинг, индексация и ранжирование. Основы SEO для начинающих.">
+    <title>Основы SEO — Как работают поисковые системы | SEO-Гид</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.0/cdn/themes/light.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.0/cdn/shoelace-autoloader.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="header__logo">
+            <sl-icon name="graph-up-arrow"></sl-icon>
+            <span>SEO-Гид</span>
+        </a>
+        <button class="header__burger" id="burgerBtn" aria-label="Открыть меню">
+            <sl-icon name="list"></sl-icon>
+        </button>
+        <nav class="header__nav nav" aria-label="Основная навигация">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+                <li class="nav__item"><a href="basics.html" class="nav__link nav__link--active">Основы</a></li>
+                <li class="nav__item"><a href="on-page.html" class="nav__link">Внутренняя</a></li>
+                <li class="nav__item"><a href="off-page.html" class="nav__link">Внешняя</a></li>
+                <li class="nav__item"><a href="technical.html" class="nav__link">Техническое</a></li>
+                <li class="nav__item"><a href="tools.html" class="nav__link">Инструменты</a></li>
+                <li class="nav__item"><a href="checklist.html" class="nav__link">Чек-лист</a></li>
+                <li class="nav__item"><a href="blog.html" class="nav__link">Блог</a></li>
+                <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="layout">
+        <main class="main">
+            <h1>Основы SEO: как работают поисковые системы</h1>
+            <p>Чтобы эффективно продвигать сайт, важно понимать, как поисковые системы находят, обрабатывают и показывают информацию. Весь процесс делится на три ключевых этапа: <strong>краулинг</strong>, <strong>индексация</strong> и <strong>ранжирование</strong>.</p>
+
+            <h2>1. Краулинг (сканирование)</h2>
+            <p>Поисковые роботы (краулеры, пауки) — это программы, которые автоматически обходят страницы интернета по ссылкам. Например, у Google это <em>Googlebot</em>, у Яндекса — <em>YandexBot</em>.</p>
+            <p>Робот начинает с известных ему адресов, переходит по ссылкам и постоянно находит новые страницы. Для управления этим процессом используется файл <code>robots.txt</code> и карта сайта <code>sitemap.xml</code>.</p>
+
+            <h2>2. Индексация</h2>
+            <p>После сканирования поисковик анализирует содержимое страницы: текст, заголовки, изображения, ссылки. Вся эта информация сохраняется в огромной базе данных — <strong>поисковом индексе</strong>.</p>
+            <p>Если страница не попала в индекс, она не будет показываться в поиске. Проверить индексацию можно через <a href="tools.html">Google Search Console</a> или Яндекс.Вебмастер.</p>
+
+            <h2>3. Ранжирование</h2>
+            <p>Когда пользователь вводит запрос, поисковая система выбирает из индекса наиболее подходящие страницы и сортирует их по релевантности. Этот процесс называется <strong>ранжированием</strong>.</p>
+            <p>Алгоритмы учитывают сотни факторов:</p>
+            <ul>
+                <li>соответствие контента запросу;</li>
+                <li>качество и авторитетность сайта;</li>
+                <li>поведенческие факторы (CTR, время на странице, отказы);</li>
+                <li>технические параметры (скорость, мобильность);</li>
+                <li>внешние ссылки и упоминания.</li>
+            </ul>
+
+            <h2>Виды поисковых запросов</h2>
+            <ol>
+                <li><strong>Навигационные</strong> — пользователь ищет конкретный сайт («ВКонтакте», «Сбербанк онлайн»).</li>
+                <li><strong>Информационные</strong> — поиск информации («что такое SEO», «как похудеть»).</li>
+                <li><strong>Транзакционные</strong> — намерение совершить действие («купить iPhone», «скачать Photoshop»).</li>
+                <li><strong>Коммерческие</strong> — сравнение и выбор перед покупкой («лучшие смартфоны 2026»).</li>
+            </ol>
+
+            <h2>Что важно запомнить</h2>
+            <ul>
+                <li>Без индексации сайт не существует для поисковиков.</li>
+                <li>Качество контента и техническое состояние сайта влияют на позиции.</li>
+                <li>SEO — это долгосрочная стратегия, а не разовое действие.</li>
+            </ul>
+
+            <p>Переходите к следующему разделу — <a href="on-page.html">внутренней оптимизации</a>.</p>
+        </main>
+
+        <aside class="sidebar">
+            
+
+            <div class="sidebar__block">
+                <h3 class="sidebar__title"><sl-icon name="bookmarks"></sl-icon> Содержание</h3>
+                <ul class="sidebar__list">
+                    <li><a href="#1-краулинг-сканирование">→ Краулинг</a></li>
+                    <li><a href="#2-индексация">→ Индексация</a></li>
+                    <li><a href="#3-ранжирование">→ Ранжирование</a></li>
+                    <li><a href="#виды-поисковых-запросов">→ Виды запросов</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar__cta">
+                <h3>Следующий шаг</h3>
+                <p>Узнайте, как правильно оптимизировать контент на страницах сайта.</p>
+                <sl-button href="on-page.html" variant="default" style="width:100%;">Внутренняя SEO →</sl-button>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__col">
+                <h3 class="footer__title">SEO-Гид</h3>
+                <p class="footer__text">Учебный проект по поисковой оптимизации.</p>
+            </div>
+            <div class="footer__col">
+                <h3 class="footer__title">Навигация</h3>
+                <ul class="footer__list">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="basics.html">Основы SEO</a></li>
+                    <li><a href="technical.html">Техническое SEO</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h3 class="footer__title">Контакты</h3>
+                <ul class="footer__list">
+                    <li><a href="mailto:info@seo-guide.ru">info@seo-guide.ru</a></li>
+                    <li><a href="tel:+78001234567">+7 (800) 123-45-67</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2026 SEO-Гид. Все права защищены. Учебный проект.</p>
+        </div>
+    </footer>
+
+    <sl-drawer label="Меню" id="drawer" placement="end">
+        <nav class="nav nav--mobile" aria-label="Мобильная навигация">
+            <ul class="nav__list" style="flex-direction:column; gap:0.25rem;">
+                <li><a href="index.html" class="nav__link">Главная</a></li>
+                <li><a href="basics.html" class="nav__link nav__link--active">Основы</a></li>
+                <li><a href="on-page.html" class="nav__link">Внутренняя</a></li>
+                <li><a href="off-page.html" class="nav__link">Внешняя</a></li>
+                <li><a href="technical.html" class="nav__link">Техническое</a></li>
+                <li><a href="tools.html" class="nav__link">Инструменты</a></li>
+                <li><a href="checklist.html" class="nav__link">Чек-лист</a></li>
+                <li><a href="blog.html" class="nav__link">Блог</a></li>
+                <li><a href="contacts.html" class="nav__link">Контакты</a></li>
+            </ul>
+        </nav>
+    </sl-drawer>
+
+    <script src="script.js"></script>
+</body>
+</html>

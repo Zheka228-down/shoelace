@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Пошаговый SEO-чек-лист для оптимизации сайта. Проверьте свой проект по пунктам.">
+    <title>SEO-чек-лист | SEO-Гид</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.0/cdn/themes/light.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.0/cdn/shoelace-autoloader.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="header__logo">
+            <sl-icon name="graph-up-arrow"></sl-icon>
+            <span>SEO-Гид</span>
+        </a>
+        <button class="header__burger" id="burgerBtn" aria-label="Открыть меню">
+            <sl-icon name="list"></sl-icon>
+        </button>
+        <nav class="header__nav nav" aria-label="Основная навигация">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+                <li class="nav__item"><a href="basics.html" class="nav__link">Основы</a></li>
+                <li class="nav__item"><a href="on-page.html" class="nav__link">Внутренняя</a></li>
+                <li class="nav__item"><a href="off-page.html" class="nav__link">Внешняя</a></li>
+                <li class="nav__item"><a href="technical.html" class="nav__link">Техническое</a></li>
+                <li class="nav__item"><a href="tools.html" class="nav__link">Инструменты</a></li>
+                <li class="nav__item"><a href="checklist.html" class="nav__link nav__link--active">Чек-лист</a></li>
+                <li class="nav__item"><a href="blog.html" class="nav__link">Блог</a></li>
+                <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="layout">
+        <main class="main">
+            <h1>SEO-чек-лист: пошаговый план оптимизации</h1>
+            <p>Этот чек-лист поможет системно подойти к продвижению сайта. Проходите пункты последовательно, отмечая выполненные задачи.</p>
+
+            <h2>Этап 1. Подготовка</h2>
+            <ol>
+                <li>Определить цели продвижения (трафик, заявки, продажи).</li>
+                <li>Провести анализ конкурентов.</li>
+                <li>Собрать семантическое ядро (список ключевых запросов).</li>
+                <li>Определить приоритетные страницы для оптимизации.</li>
+            </ol>
+
+            <h2>Этап 2. Внутренняя оптимизация</h2>
+            <ol start="5">
+                <li>Прописать уникальные Title для каждой страницы.</li>
+                <li>Составить Description.</li>
+                <li>Проверить иерархию заголовков H1–H6.</li>
+                <li>Оптимизировать тексты под ключевые запросы.</li>
+                <li>Добавить внутренние ссылки.</li>
+                <li>Оптимизировать изображения (alt, title, сжатие).</li>
+            </ol>
+
+            <h2>Этап 3. Техническая оптимизация</h2>
+            <ol start="11">
+                <li>Настроить robots.txt и sitemap.xml.</li>
+                <li>Установить HTTPS.</li>
+                <li>Проверить скорость загрузки.</li>
+                <li>Убедиться в корректной работе на мобильных.</li>
+                <li>Исправить битые ссылки и 404.</li>
+                <li>Настроить канонические URL.</li>
+            </ol>
+
+            <h2>Этап 4. Внешняя оптимизация</h2>
+            <ol start="17">
+                <li>Составить стратегию ссылочного продвижения.</li>
+                <li>Найти площадки для гостевых публикаций.</li>
+                <li>Работать над упоминаниями бренда.</li>
+                <li>Отслеживать новые ссылки и токсичные.</li>
+            </ol>
+
+            <h2>Этап 5. Анализ и корректировка</h2>
+            <ol start="21">
+                <li>Настроить отслеживание позиций.</li>
+                <li>Анализировать поведенческие факторы.</li>
+                <li>Вносить правки в контент по результатам.</li>
+                <li>Повторять аудит раз в квартал.</li>
+            </ol>
+        </main>
+
+        <aside class="sidebar">
+
+            <div class="sidebar__block">
+                <h3 class="sidebar__title"><sl-icon name="bookmarks"></sl-icon> Этапы</h3>
+                <ul class="sidebar__list">
+                    <li><a href="#этап-1-подготовка">→ Подготовка</a></li>
+                    <li><a href="#этап-2-внутренняя-оптимизация">→ Внутренняя</a></li>
+                    <li><a href="#этап-3-техническая-оптимизация">→ Техническая</a></li>
+                    <li><a href="#этап-4-внешняя-оптимизация">→ Внешняя</a></li>
+                    <li><a href="#этап-5-анализ-и-корректировка">→ Анализ</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar__cta">
+                <h3>Нужны инструменты?</h3>
+                <p>Обзор сервисов для SEO-специалиста в отдельном разделе.</p>
+                <sl-button href="tools.html" variant="default" style="width:100%;">Инструменты →</sl-button>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__col">
+                <h3 class="footer__title">SEO-Гид</h3>
+                <p class="footer__text">Учебный проект по поисковой оптимизации.</p>
+            </div>
+            <div class="footer__col">
+                <h3 class="footer__title">Навигация</h3>
+                <ul class="footer__list">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="basics.html">Основы SEO</a></li>
+                    <li><a href="technical.html">Техническое SEO</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h3 class="footer__title">Контакты</h3>
+                <ul class="footer__list">
+                    <li><a href="mailto:info@seo-guide.ru">info@seo-guide.ru</a></li>
+                    <li><a href="tel:+78001234567">+7 (800) 123-45-67</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2026 SEO-Гид. Все права защищены. Учебный проект.</p>
+        </div>
+    </footer>
+
+    <sl-drawer label="Меню" id="drawer" placement="end">
+        <nav class="nav nav--mobile" aria-label="Мобильная навигация">
+            <ul class="nav__list" style="flex-direction:column; gap:0.25rem;">
+                <li><a href="index.html" class="nav__link">Главная</a></li>
+                <li><a href="basics.html" class="nav__link">Основы</a></li>
+                <li><a href="on-page.html" class="nav__link">Внутренняя</a></li>
+                <li><a href="off-page.html" class="nav__link">Внешняя</a></li>
+                <li><a href="technical.html" class="nav__link">Техническое</a></li>
+                <li><a href="tools.html" class="nav__link">Инструменты</a></li>
+                <li><a href="checklist.html" class="nav__link nav__link--active">Чек-лист</a></li>
+                <li><a href="blog.html" class="nav__link">Блог</a></li>
+                <li><a href="contacts.html" class="nav__link">Контакты</a></li>
+            </ul>
+        </nav>
+    </sl-drawer>
+
+    <script src="script.js"></script>
+</body>
+</html>
