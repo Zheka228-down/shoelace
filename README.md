@@ -33,5 +33,5 @@
 
 1. Клонировать репозиторий:
    ```bash
-   git clone https://github.com/Zheka228-down/shoelace.git
+   git clone https://github.com/Zheka228-down/shoelace/tree/main
 2. Открыть index.html в браузере или через Live Server в VS Code.
